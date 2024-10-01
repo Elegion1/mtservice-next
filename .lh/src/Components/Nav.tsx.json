@@ -1,0 +1,78 @@
+{
+    "sourceFile": "src/components/Nav.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 15,
+            "patches": [
+                {
+                    "date": 1727714401988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1727714408746,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n import { Navbar } from \"flowbite-react\";\n \n-export default function Nav(){\n-    return (\n-        <Navbar>\n-            \n-        </Navbar>\n-    )\n-}\n\\ No newline at end of file\n+export default function Nav() {\n+  return \n+  <Navbar>\n+\n+  </Navbar>;\n+}\n"
+                },
+                {
+                    "date": 1727714415086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,10 @@\n import { Navbar } from \"flowbite-react\";\n \n export default function Nav() {\n-  return \n+  return {\n+\n   <Navbar>\n \n   </Navbar>;\n+  }\n }\n"
+                },
+                {
+                    "date": 1727714425058,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,8 @@\n import { Navbar } from \"flowbite-react\";\n \n export default function Nav() {\n-  return {\n-\n+  return ()\n   <Navbar>\n \n   </Navbar>;\n-  }\n }\n"
+                },
+                {
+                    "date": 1727714430070,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,10 @@\n import { Navbar } from \"flowbite-react\";\n \n export default function Nav() {\n-  return ()\n+  return (\n+\n   <Navbar>\n \n   </Navbar>;\n+  )\n }\n"
+                },
+                {
+                    "date": 1727714435351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n   return (\n \n   <Navbar>\n \n-  </Navbar>;\n+  </Navbar>\n   )\n }\n"
+                },
+                {
+                    "date": 1727714441660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,8 @@\n+import { Navbar } from \"flowbite-react\";\n+\n+export default function Nav() {\n+  return \n+  <Navbar>\n+\n+  </Navbar>;\n+}\n"
+                },
+                {
+                    "date": 1727714484952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,18 +1,6 @@\n import { Navbar } from \"flowbite-react\";\n \n export default function Nav() {\n-  return \n-  <Navbar>\n-\n-  </Navbar>;\n+  return;\n+  <Navbar></Navbar>;\n }\n-import { Navbar } from \"flowbite-react\";\n-\n-export default function Nav() {\n-  return (\n-\n-  <Navbar>\n-\n-  </Navbar>\n-  )\n-}\n"
+                },
+                {
+                    "date": 1727714490800,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+import { Navbar } from \"flowbite-react\";\n+\n+export default function Nav() {\n+  return (\n+\n+  <Navbar>\n+\n+  </Navbar>\n+  )\n+}\n"
+                },
+                {
+                    "date": 1727714685967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,31 @@\n+// src/components/Nav.js\n+\n import { Navbar } from \"flowbite-react\";\n+import { Link } from \"react-router-dom\"; // Assicurati di importare Link se lo usi\n \n export default function Nav() {\n   return (\n-\n-  <Navbar>\n-\n-  </Navbar>\n-  )\n-}\n-import { Navbar } from \"flowbite-react\";\n-\n-export default function Nav() {\n-  return;\n-  <Navbar></Navbar>;\n-}\n+    <Navbar\n+      fluid={true} // Per una navbar fluida che occupa l'intera larghezza\n+      rounded={true} // Per angoli arrotondati\n+    >\n+      <Navbar.Brand>\n+        <span className=\"self-center whitespace-nowrap text-xl font-semibold dark:text-white\">\n+          My Website\n+        </span>\n+      </Navbar.Brand>\n+      <Navbar.Toggle />\n+      <Navbar.Collapse>\n+        <Navbar.Link>\n+          <Link to=\"/\">Home</Link>\n+        </Navbar.Link>\n+        <Navbar.Link>\n+          <Link to=\"/about\">About</Link>\n+        </Navbar.Link>\n+        <Navbar.Link>\n+          <Link to=\"/contact\">Contact</Link>\n+        </Navbar.Link>\n+      </Navbar.Collapse>\n+    </Navbar>\n+  );\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1727714782291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n // src/components/Nav.js\n \n import { Navbar } from \"flowbite-react\";\n-import { Link } from \"react-router-dom\"; // Assicurati di importare Link se lo usi\n+// import { Link } from \"react-router-dom\"; // Assicurati di importare Link se lo usi\n \n export default function Nav() {\n   return (\n     <Navbar\n@@ -27,5 +27,5 @@\n         </Navbar.Link>\n       </Navbar.Collapse>\n     </Navbar>\n   );\n-}\n\\ No newline at end of file\n+}\n"
+                },
+                {
+                    "date": 1727770890351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n // src/components/Nav.js\n \n import { Navbar } from \"flowbite-react\";\n-// import { Link } from \"react-router-dom\"; // Assicurati di importare Link se lo usi\n+import { Link } from \"react-router-dom\"; // Assicurati di importare Link se lo usi\n \n export default function Nav() {\n   return (\n     <Navbar\n"
+                },
+                {
+                    "date": 1727770934319,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n // src/components/Nav.js\n \n import { Navbar } from \"flowbite-react\";\n-import { Link } from \"react-router-dom\"; // Assicurati di importare Link se lo usi\n+import { Link } from \"r\"; // Assicurati di importare Link se lo usi\n \n export default function Nav() {\n   return (\n     <Navbar\n"
+                },
+                {
+                    "date": 1727770941487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n // src/components/Nav.js\n \n import { Navbar } from \"flowbite-react\";\n-import { Link } from \"r\"; // Assicurati di importare Link se lo usi\n+import { Link } from \"next/link\"; // Assicurati di importare Link se lo usi\n \n export default function Nav() {\n   return (\n     <Navbar\n"
+                },
+                {
+                    "date": 1727770946903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n // src/components/Nav.js\n \n import { Navbar } from \"flowbite-react\";\n-import { Link } from \"next/link\"; // Assicurati di importare Link se lo usi\n+import { Link  from \"next/link\"; // Assicurati di importare Link se lo usi\n \n export default function Nav() {\n   return (\n     <Navbar\n"
+                },
+                {
+                    "date": 1727770959852,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n // src/components/Nav.js\n \n import { Navbar } from \"flowbite-react\";\n-import { Link  from \"next/link\"; // Assicurati di importare Link se lo usi\n+import Link  from \"next/link\"; // Assicurati di importare Link se lo usi\n \n export default function Nav() {\n   return (\n     <Navbar\n@@ -16,15 +16,15 @@\n       </Navbar.Brand>\n       <Navbar.Toggle />\n       <Navbar.Collapse>\n         <Navbar.Link>\n-          <Link to=\"/\">Home</Link>\n+          <Link href=\"/\">Home</Link>\n         </Navbar.Link>\n         <Navbar.Link>\n-          <Link to=\"/about\">About</Link>\n+          <Link href=\"/about\">About</Link>\n         </Navbar.Link>\n         <Navbar.Link>\n-          <Link to=\"/contact\">Contact</Link>\n+          <Link href=\"/contact\">Contact</Link>\n         </Navbar.Link>\n       </Navbar.Collapse>\n     </Navbar>\n   );\n"
+                }
+            ],
+            "date": 1727714401988,
+            "name": "Commit-0",
+            "content": "import { Navbar } from \"flowbite-react\";\n\nexport default function Nav(){\n    return (\n        <Navbar>\n            \n        </Navbar>\n    )\n}"
+        }
+    ]
+}

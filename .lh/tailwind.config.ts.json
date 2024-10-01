@@ -1,0 +1,30 @@
+{
+    "sourceFile": "tailwind.config.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1727712949470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1727712965877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n   content: [\n     \"./src/pages/**/*.{js,ts,jsx,tsx,mdx}\",\n     \"./src/components/**/*.{js,ts,jsx,tsx,mdx}\",\n     \"./src/app/**/*.{js,ts,jsx,tsx,mdx}\",\n+    \n   ],\n   theme: {\n     extend: {\n       colors: {\n"
+                },
+                {
+                    "date": 1727712980580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   content: [\n     \"./src/pages/**/*.{js,ts,jsx,tsx,mdx}\",\n     \"./src/components/**/*.{js,ts,jsx,tsx,mdx}\",\n     \"./src/app/**/*.{js,ts,jsx,tsx,mdx}\",\n-    \n+    flowbite.content(),\n   ],\n   theme: {\n     extend: {\n       colors: {\n@@ -15,7 +15,9 @@\n         foreground: \"var(--foreground)\",\n       },\n     },\n   },\n-  plugins: [],\n+  plugins: [\n+    flowbite.plugin(),\n+  ],\n };\n export default config;\n"
+                },
+                {
+                    "date": 1727713168320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,12 @@\n import type { Config } from \"tailwindcss\";\n-const flowbite = require(\"flowbite-react/tailwind\");\n \n const config: Config = {\n   content: [\n     \"./src/pages/**/*.{js,ts,jsx,tsx,mdx}\",\n     \"./src/components/**/*.{js,ts,jsx,tsx,mdx}\",\n     \"./src/app/**/*.{js,ts,jsx,tsx,mdx}\",\n-    flowbite.content(),\n+    \"./node_modules/flowbite/**/*.js\",  // Aggiungi il percorso corretto per Flowbite\n   ],\n   theme: {\n     extend: {\n       colors: {\n@@ -16,8 +15,9 @@\n       },\n     },\n   },\n   plugins: [\n-    flowbite.plugin(),\n+    require(\"flowbite/plugin\"),  // Usa il plugin corretto di Flowbite\n   ],\n };\n-export default config;\n+\n+export default config;\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1727712949470,
+            "name": "Commit-0",
+            "content": "import type { Config } from \"tailwindcss\";\nconst flowbite = require(\"flowbite-react/tailwind\");\n\nconst config: Config = {\n  content: [\n    \"./src/pages/**/*.{js,ts,jsx,tsx,mdx}\",\n    \"./src/components/**/*.{js,ts,jsx,tsx,mdx}\",\n    \"./src/app/**/*.{js,ts,jsx,tsx,mdx}\",\n  ],\n  theme: {\n    extend: {\n      colors: {\n        background: \"var(--background)\",\n        foreground: \"var(--foreground)\",\n      },\n    },\n  },\n  plugins: [],\n};\nexport default config;\n"
+        }
+    ]
+}

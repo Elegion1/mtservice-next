@@ -1,0 +1,158 @@
+{
+    "sourceFile": "src/app/page.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 35,
+            "patches": [
+                {
+                    "date": 1727712612094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1727712617487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import Image from \"next/image\";\n \n export default function Home() {\n   return (\n-    \n+    <>\n+    </>\n   );\n }\n"
+                },
+                {
+                    "date": 1727712622929,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,8 @@\n \n export default function Home() {\n   return (\n     <>\n+      <h1>Ciao</h1>\n     </>\n   );\n }\n"
+                },
+                {
+                    "date": 1727712664527,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n-import Image from \"next/image\";\n \n export default function Home() {\n   return (\n     <>\n"
+                },
+                {
+                    "date": 1727714090817,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,8 @@\n export default function Home() {\n   return (\n     <>\n       <h1>Ciao</h1>\n+      \n     </>\n   );\n }\n"
+                },
+                {
+                    "date": 1727714096015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n+import { Navbar } from \"flowbite-react\";\n \n export default function Home() {\n   return (\n     <>\n       <h1>Ciao</h1>\n-      \n+      <Navbar\n     </>\n   );\n }\n"
+                },
+                {
+                    "date": 1727714109404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n export default function Home() {\n   return (\n     <>\n       <h1>Ciao</h1>\n-      <Navbar\n+      <navbar />\n     </>\n   );\n }\n"
+                },
+                {
+                    "date": 1727714128981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n export default function Home() {\n   return (\n     <>\n       <h1>Ciao</h1>\n-      <navbar />\n+      \n     </>\n   );\n }\n"
+                },
+                {
+                    "date": 1727714294485,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n export default function Home() {\n   return (\n     <>\n-      <h1>Ciao</h1>\n       \n+      \n     </>\n   );\n }\n"
+                },
+                {
+                    "date": 1727714300195,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n export default function Home() {\n   return (\n     <>\n+      <navbar\n       \n-      \n     </>\n   );\n }\n"
+                },
+                {
+                    "date": 1727714320411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,11 @@\n import { Navbar } from \"flowbite-react\";\n+import \n \n export default function Home() {\n   return (\n     <>\n-      <navbar\n+      <navbar/>\n       \n     </>\n   );\n }\n"
+                },
+                {
+                    "date": 1727714326996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { Navbar } from \"flowbite-react\";\n-import \n+import navbar from \n \n export default function Home() {\n   return (\n     <>\n"
+                },
+                {
+                    "date": 1727714332602,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { Navbar } from \"flowbite-react\";\n-import navbar from \n+import navbar from \".\"\n \n export default function Home() {\n   return (\n     <>\n"
+                },
+                {
+                    "date": 1727714340104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { Navbar } from \"flowbite-react\";\n-import navbar from \".\"\n+import navbar from \"../Components\"\n \n export default function Home() {\n   return (\n     <>\n"
+                },
+                {
+                    "date": 1727714346944,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+import { Navbar } from \"flowbite-react\";\n+import navbar from \"../Components/navbar\";\n+\n+export default function Home() {\n+  return (\n+    <>\n+      <navbar />\n+    </>\n+  );\n+}\n"
+                },
+                {
+                    "date": 1727714373394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,21 +1,10 @@\n import { Navbar } from \"flowbite-react\";\n-import navbar from \"../Components/navbar\";\n+import navbar from \"../components/navbar\";\n \n export default function Home() {\n   return (\n     <>\n       <navbar />\n     </>\n   );\n }\n-import { Navbar } from \"flowbite-react\";\n-import navbar from \"../Components\"\n-\n-export default function Home() {\n-  return (\n-    <>\n-      <navbar/>\n-      \n-    </>\n-  );\n-}\n"
+                },
+                {
+                    "date": 1727714398009,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { Navbar } from \"flowbite-react\";\n-import navbar from \"../components/navbar\";\n+import navbar from \"../components/Nav\";\n \n export default function Home() {\n   return (\n     <>\n"
+                },
+                {
+                    "date": 1727714448192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n \n export default function Home() {\n   return (\n     <>\n-      <navbar />\n+      <Navbar />\n     </>\n   );\n }\n"
+                },
+                {
+                    "date": 1727714458563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n import { Navbar } from \"flowbite-react\";\n-import navbar from \"../components/Nav\";\n+import Nav from \"../components/Nav\";\n \n export default function Home() {\n   return (\n     <>\n-      <Navbar />\n+      <Nav />\n     </>\n   );\n }\n"
+                },
+                {
+                    "date": 1727714679061,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,31 @@\n+// src/components/Nav.js\n+\n import { Navbar } from \"flowbite-react\";\n-import Nav from \"../components/Nav\";\n+import { Link } from \"react-router-dom\"; // Assicurati di importare Link se lo usi\n \n-export default function Home() {\n+export default function Nav() {\n   return (\n-    <>\n-      <Nav />\n-    </>\n+    <Navbar\n+      fluid={true} // Per una navbar fluida che occupa l'intera larghezza\n+      rounded={true} // Per angoli arrotondati\n+    >\n+      <Navbar.Brand>\n+        <span className=\"self-center whitespace-nowrap text-xl font-semibold dark:text-white\">\n+          My Website\n+        </span>\n+      </Navbar.Brand>\n+      <Navbar.Toggle />\n+      <Navbar.Collapse>\n+        <Navbar.Link>\n+          <Link to=\"/\">Home</Link>\n+        </Navbar.Link>\n+        <Navbar.Link>\n+          <Link to=\"/about\">About</Link>\n+        </Navbar.Link>\n+        <Navbar.Link>\n+          <Link to=\"/contact\">Contact</Link>\n+        </Navbar.Link>\n+      </Navbar.Collapse>\n+    </Navbar>\n   );\n-}\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1727714709134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,31 +1,15 @@\n-// src/components/Nav.js\n+// src/app/page.tsx\n \n-import { Navbar } from \"flowbite-react\";\n-import { Link } from \"react-router-dom\"; // Assicurati di importare Link se lo usi\n+import Nav from \"../components/Nav\";\n \n-export default function Nav() {\n+export default function Home() {\n   return (\n-    <Navbar\n-      fluid={true} // Per una navbar fluida che occupa l'intera larghezza\n-      rounded={true} // Per angoli arrotondati\n-    >\n-      <Navbar.Brand>\n-        <span className=\"self-center whitespace-nowrap text-xl font-semibold dark:text-white\">\n-          My Website\n-        </span>\n-      </Navbar.Brand>\n-      <Navbar.Toggle />\n-      <Navbar.Collapse>\n-        <Navbar.Link>\n-          <Link to=\"/\">Home</Link>\n-        </Navbar.Link>\n-        <Navbar.Link>\n-          <Link to=\"/about\">About</Link>\n-        </Navbar.Link>\n-        <Navbar.Link>\n-          <Link to=\"/contact\">Contact</Link>\n-        </Navbar.Link>\n-      </Navbar.Collapse>\n-    </Navbar>\n+    <>\n+      <Nav />\n+      <main>\n+        <h1>Welcome to My Website</h1>\n+        {/* Qui puoi aggiungere il resto dei tuoi contenuti */}\n+      </main>\n+    </>\n   );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1727771118398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n // src/app/page.tsx\n \n-import Nav from \"../components/Nav\";\n+import Nav from \"../components/N\";\n \n export default function Home() {\n   return (\n     <>\n"
+                },
+                {
+                    "date": 1727772033900,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,13 @@\n // src/app/page.tsx\n \n-import Nav from \"../components/N\";\n+import Nav from \"../components/Nav\";\n \n export default function Home() {\n   return (\n     <>\n       <Nav />\n+      \n       <main>\n         <h1>Welcome to My Website</h1>\n         {/* Qui puoi aggiungere il resto dei tuoi contenuti */}\n       </main>\n"
+                },
+                {
+                    "date": 1727772039246,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n export default function Home() {\n   return (\n     <>\n       <Nav />\n-      \n+      <Mast\n       <main>\n         <h1>Welcome to My Website</h1>\n         {/* Qui puoi aggiungere il resto dei tuoi contenuti */}\n       </main>\n"
+                },
+                {
+                    "date": 1727772045581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,12 +5,12 @@\n export default function Home() {\n   return (\n     <>\n       <Nav />\n-      <Mast\n+      <Masthead />\n       <main>\n         <h1>Welcome to My Website</h1>\n         {/* Qui puoi aggiungere il resto dei tuoi contenuti */}\n       </main>\n     </>\n   );\n\\ No newline at end of file\n-}\n+}\n"
+                },
+                {
+                    "date": 1727772057183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n // src/app/page.tsx\n \n import Nav from \"../components/Nav\";\n+import Masthead from \n \n export default function Home() {\n   return (\n     <>\n@@ -12,5 +13,5 @@\n         {/* Qui puoi aggiungere il resto dei tuoi contenuti */}\n       </main>\n     </>\n   );\n-}\n\\ No newline at end of file\n+}\n"
+                },
+                {
+                    "date": 1727772064758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n // src/app/page.tsx\n \n import Nav from \"../components/Nav\";\n-import Masthead from \n+import Masthead from \"../components/Masthead\"\n \n export default function Home() {\n   return (\n     <>\n"
+                },
+                {
+                    "date": 1727773695695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,11 +5,11 @@\n \n export default function Home() {\n   return (\n     <>\n+      <main>\n       <Nav />\n       <Masthead />\n-      <main>\n         <h1>Welcome to My Website</h1>\n         {/* Qui puoi aggiungere il resto dei tuoi contenuti */}\n       </main>\n     </>\n"
+                },
+                {
+                    "date": 1727773716681,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+// src/app/page.tsx\n+\n+import Nav from \"../components/Nav\";\n+import Masthead from \"../components/Masthead\";\n+\n+export default function Home() {\n+  return (\n+    <>\n+      <main>\n+        <Nav />\n+        <Masthead />\n+        {/* Qui puoi aggiungere il resto dei tuoi contenuti */}\n+      </main>\n+    </>\n+  );\n+}\n"
+                },
+                {
+                    "date": 1727773911527,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,26 +8,9 @@\n     <>\n       <main>\n         <Nav />\n         <Masthead />\n-        {/* Qui puoi aggiungere il resto dei tuoi contenuti */}\n+        div.\n       </main>\n     </>\n   );\n }\n-// src/app/page.tsx\n-\n-import Nav from \"../components/Nav\";\n-import Masthead from \"../components/Masthead\"\n-\n-export default function Home() {\n-  return (\n-    <>\n-      <main>\n-      <Nav />\n-      <Masthead />\n-        <h1>Welcome to My Website</h1>\n-        {/* Qui puoi aggiungere il resto dei tuoi contenuti */}\n-      </main>\n-    </>\n-  );\n-}\n"
+                },
+                {
+                    "date": 1727773916987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     <>\n       <main>\n         <Nav />\n         <Masthead />\n-        div.\n+        <div className=\"container \"></div>\n       </main>\n     </>\n   );\n }\n"
+                },
+                {
+                    "date": 1727773924177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,11 @@\n     <>\n       <main>\n         <Nav />\n         <Masthead />\n-        <div className=\"container \"></div>\n+        <div className=\"container p-10\">\n+          <h2></h2>\n+        </div>\n       </main>\n     </>\n   );\n }\n"
+                },
+                {
+                    "date": 1727774095677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n-// src/app/page.tsx\n \n import Nav from \"../components/Nav\";\n import Masthead from \"../components/Masthead\";\n \n@@ -9,9 +8,9 @@\n       <main>\n         <Nav />\n         <Masthead />\n         <div className=\"container p-10\">\n-          <h2></h2>\n+          <h2>Home</h2>\n         </div>\n       </main>\n     </>\n   );\n"
+                },
+                {
+                    "date": 1727774342872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,11 @@\n-\n import Nav from \"../components/Nav\";\n import Masthead from \"../components/Masthead\";\n \n export default function Home() {\n   return (\n     <>\n       <main>\n-        <Nav />\n-        <Masthead />\n         <div className=\"container p-10\">\n           <h2>Home</h2>\n         </div>\n       </main>\n"
+                },
+                {
+                    "date": 1727774354560,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,4 @@\n-import Nav from \"../components/Nav\";\n-import Masthead from \"../components/Masthead\";\n \n export default function Home() {\n   return (\n     <>\n"
+                },
+                {
+                    "date": 1727792305978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,13 @@\n+import Nav from \"../components/Nav\";\n+import Masthead from \"../components/Masthead\";\n \n export default function Home() {\n   return (\n     <>\n       <main>\n+        <Nav />\n+        <Masthead />\n         <div className=\"container p-10\">\n           <h2>Home</h2>\n         </div>\n       </main>\n"
+                }
+            ],
+            "date": 1727712612094,
+            "name": "Commit-0",
+            "content": "import Image from \"next/image\";\n\nexport default function Home() {\n  return (\n    \n  );\n}\n"
+        }
+    ]
+}
